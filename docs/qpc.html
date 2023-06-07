@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module qpc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>qpc</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/codio/workspace/qpc.py">/home/codio/workspace/qpc.py</a></font></td></tr></table>
+    <p><tt>Query&nbsp;Processing&nbsp;Code&nbsp;(QPC)&nbsp;-&nbsp;Collection&nbsp;of&nbsp;functions&nbsp;to&nbsp;query&nbsp;Processing&nbsp;code&nbsp;once&nbsp;it&nbsp;has&nbsp;gone&nbsp;through&nbsp;the&nbsp;PPC&nbsp;parser</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_attributes"><strong>get_attributes</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;attributes&nbsp;for&nbsp;the&nbsp;class<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;attributes&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;attributes&nbsp;for&nbsp;the&nbsp;class</tt></dd></dl>
+ <dl><dt><a name="-get_class"><strong>get_class</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;class<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;classes&nbsp;(dictionary):&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;class;&nbsp;has&nbsp;the&nbsp;keys&nbsp;name,&nbsp;code,&nbsp;methods,&nbsp;constructor,&nbsp;and&nbsp;attributes</tt></dd></dl>
+ <dl><dt><a name="-get_code"><strong>get_code</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;Processing&nbsp;code&nbsp;the&nbsp;student&nbsp;wrote&nbsp;minus&nbsp;comments&nbsp;and&nbsp;blank&nbsp;lines<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;code&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;student&nbsp;code&nbsp;minus&nbsp;comments&nbsp;and&nbsp;blank&nbsp;lines</tt></dd></dl>
+ <dl><dt><a name="-get_constructor"><strong>get_constructor</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;constructor<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;constructor&nbsp;(dictionary):&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;class;&nbsp;has&nbsp;the&nbsp;keys&nbsp;code&nbsp;and&nbsp;parameters</tt></dd></dl>
+ <dl><dt><a name="-get_constructor_code"><strong>get_constructor_code</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;code&nbsp;for&nbsp;the&nbsp;constructor<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;code&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;lines&nbsp;of&nbsp;code&nbsp;for&nbsp;the&nbsp;constructor</tt></dd></dl>
+ <dl><dt><a name="-get_constructor_parameters"><strong>get_constructor_parameters</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;parameters&nbsp;for&nbsp;the&nbsp;constructor<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;parameters&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;parameters&nbsp;for&nbsp;the&nbsp;constructor</tt></dd></dl>
+ <dl><dt><a name="-get_full_code"><strong>get_full_code</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;Processing&nbsp;code&nbsp;as&nbsp;the&nbsp;student&nbsp;wrote&nbsp;it<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;full_code&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;Processing&nbsp;code&nbsp;as&nbsp;the&nbsp;student&nbsp;wrote&nbsp;it</tt></dd></dl>
+ <dl><dt><a name="-get_global_variables"><strong>get_global_variables</strong></a>(pc)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;global&nbsp;variables&nbsp;in&nbsp;the&nbsp;sketch<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;global_variables&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;global&nbsp;variables&nbsp;declared&nbsp;in&nbsp;the&nbsp;sketch</tt></dd></dl>
+ <dl><dt><a name="-get_method"><strong>get_method</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;dictionary&nbsp;containing&nbsp;a&nbsp;parsed&nbsp;method.&nbsp;<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;method&nbsp;(dictionary):&nbsp;parsed&nbsp;method;&nbsp;the&nbsp;dictionary&nbsp;has&nbsp;the&nbsp;keys&nbsp;code,&nbsp;conditionals,&nbsp;loops,&nbsp;name,&nbsp;parameters,&nbsp;return_type,&nbsp;and&nbsp;return_value<br>
+&nbsp;&nbsp;None&nbsp;(None&nbsp;type):&nbsp;represents&nbsp;lack&nbsp;of&nbsp;expected&nbsp;method</tt></dd></dl>
+ <dl><dt><a name="-get_method_code"><strong>get_method_code</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;of&nbsp;the&nbsp;code&nbsp;found&nbsp;in&nbsp;a&nbsp;specified&nbsp;method<br>
+&nbsp;<br>
+&nbsp;&nbsp;Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+&nbsp;&nbsp;Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;code&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;lines&nbsp;of&nbsp;code&nbsp;from&nbsp;the&nbsp;method</tt></dd></dl>
+ <dl><dt><a name="-get_method_conditionals"><strong>get_method_conditionals</strong></a>(pc, method_name, index=None)</dt><dd><tt>Returns&nbsp;a&nbsp;dictionaries&nbsp;represeting&nbsp;a&nbsp;conditional&nbsp;statements;&nbsp;if&nbsp;no&nbsp;value&nbsp;for&nbsp;"index"&nbsp;is&nbsp;provided&nbsp;then&nbsp;it&nbsp;returns&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries&nbsp;representing&nbsp;all&nbsp;conditionals&nbsp;in&nbsp;a&nbsp;method<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;index&nbsp;(integer):&nbsp;specifies&nbsp;which&nbsp;conditional&nbsp;to&nbsp;return;&nbsp;defaults&nbsp;to&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;conditionals&nbsp;(list&nbsp;of&nbsp;dictionaries):&nbsp;conditionals&nbsp;in&nbsp;a&nbsp;method;&nbsp;the&nbsp;dictionary&nbsp;has&nbsp;the&nbsp;keys&nbsp;code,&nbsp;true_branch,&nbsp;and&nbsp;false_branch</tt></dd></dl>
+ <dl><dt><a name="-get_method_for_loops"><strong>get_method_for_loops</strong></a>(pc, method_name, index=None)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;represeting&nbsp;a&nbsp;single&nbsp;for&nbsp;loop;&nbsp;if&nbsp;no&nbsp;value&nbsp;for&nbsp;"index"&nbsp;is&nbsp;provided&nbsp;then&nbsp;it&nbsp;returns&nbsp;a&nbsp;2D&nbsp;list&nbsp;representing&nbsp;the&nbsp;code&nbsp;for&nbsp;every&nbsp;for&nbsp;loop&nbsp;in&nbsp;a&nbsp;method<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;index&nbsp;(integer):&nbsp;specifies&nbsp;which&nbsp;for&nbsp;loop&nbsp;code&nbsp;to&nbsp;return;&nbsp;defaults&nbsp;to&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;for_loops&nbsp;(list&nbsp;of&nbsp;lists&nbsp;or&nbsp;list&nbsp;of&nbsp;strings):&nbsp;lines&nbsp;of&nbsp;code&nbsp;representing&nbsp;a&nbsp;for&nbsp;loop&nbsp;(list&nbsp;of&nbsp;strings)&nbsp;or&nbsp;all&nbsp;for&nbsp;loops&nbsp;(list&nbsp;of&nbsp;lists)</tt></dd></dl>
+ <dl><dt><a name="-get_method_loops"><strong>get_method_loops</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries&nbsp;representing&nbsp;all&nbsp;loops&nbsp;found&nbsp;in&nbsp;the&nbsp;method<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;loops&nbsp;(list&nbsp;of&nbsp;dictionaries):&nbsp;all&nbsp;loops&nbsp;found&nbsp;in&nbsp;a&nbsp;specified&nbsp;method;&nbsp;dictionary&nbsp;has&nbsp;the&nbsp;keys&nbsp;type&nbsp;and&nbsp;code</tt></dd></dl>
+ <dl><dt><a name="-get_method_parameters"><strong>get_method_parameters</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;of&nbsp;the&nbsp;code&nbsp;of&nbsp;the&nbsp;parameters&nbsp;for&nbsp;a&nbsp;specified&nbsp;method<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;parameters&nbsp;(list&nbsp;of&nbsp;strings):&nbsp;parameters&nbsp;for&nbsp;the&nbsp;specified&nbsp;method;&nbsp;returns&nbsp;a&nbsp;list&nbsp;with&nbsp;an&nbsp;empty&nbsp;string&nbsp;if&nbsp;no&nbsp;parameters</tt></dd></dl>
+ <dl><dt><a name="-get_method_return_type"><strong>get_method_return_type</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;representing&nbsp;the&nbsp;data&nbsp;type&nbsp;the&nbsp;method&nbsp;must&nbsp;return<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;return_type&nbsp;(string):&nbsp;data&nbsp;type&nbsp;the&nbsp;method&nbsp;must&nbsp;return</tt></dd></dl>
+ <dl><dt><a name="-get_method_return_value"><strong>get_method_return_value</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;representing&nbsp;the&nbsp;value&nbsp;the&nbsp;method&nbsp;returns;&nbsp;returns&nbsp;an&nbsp;empty&nbsp;string&nbsp;for&nbsp;"void"&nbsp;methods<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;return_value&nbsp;(string):&nbsp;value&nbsp;the&nbsp;method&nbsp;returns;&nbsp;does&nbsp;not&nbsp;include&nbsp;the&nbsp;word&nbsp;"return"</tt></dd></dl>
+ <dl><dt><a name="-get_method_while_loops"><strong>get_method_while_loops</strong></a>(pc, method_name, index=None)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;represeting&nbsp;a&nbsp;single&nbsp;while&nbsp;loop;&nbsp;if&nbsp;no&nbsp;value&nbsp;for&nbsp;"index"&nbsp;is&nbsp;provided&nbsp;then&nbsp;it&nbsp;returns&nbsp;a&nbsp;2D&nbsp;list&nbsp;representing&nbsp;the&nbsp;code&nbsp;for&nbsp;every&nbsp;while&nbsp;loop&nbsp;in&nbsp;a&nbsp;method<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;index&nbsp;(integer):&nbsp;specifies&nbsp;which&nbsp;for&nbsp;loop&nbsp;code&nbsp;to&nbsp;return;&nbsp;defaults&nbsp;to&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;while_loops&nbsp;(list&nbsp;of&nbsp;lists&nbsp;or&nbsp;list&nbsp;of&nbsp;strings):&nbsp;lines&nbsp;of&nbsp;code&nbsp;representing&nbsp;a&nbsp;while&nbsp;loop&nbsp;(list&nbsp;of&nbsp;strings)&nbsp;or&nbsp;all&nbsp;while&nbsp;loops&nbsp;(list&nbsp;of&nbsp;lists)</tt></dd></dl>
+ <dl><dt><a name="-has_attribute"><strong>has_attribute</strong></a>(pc, expected_attribute)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;if&nbsp;the&nbsp;attribute&nbsp;is&nbsp;found&nbsp;in&nbsp;the&nbsp;class<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;expected_attribute&nbsp;(string):&nbsp;the&nbsp;attribute&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;the&nbsp;class<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;attribute&nbsp;is&nbsp;found&nbsp;or&nbsp;not&nbsp;in&nbsp;the&nbsp;class</tt></dd></dl>
+ <dl><dt><a name="-has_class_method"><strong>has_class_method</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;if&nbsp;the&nbsp;class&nbsp;method&nbsp;name&nbsp;is&nbsp;found<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;the&nbsp;class<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;method&nbsp;name&nbsp;is&nbsp;found&nbsp;or&nbsp;not&nbsp;in&nbsp;the&nbsp;class</tt></dd></dl>
+ <dl><dt><a name="-has_class_name"><strong>has_class_name</strong></a>(pc, class_name)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;if&nbsp;the&nbsp;class&nbsp;name&nbsp;is&nbsp;found<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;class_name&nbsp;(string):&nbsp;the&nbsp;class&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;class&nbsp;name&nbsp;is&nbsp;found&nbsp;or&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-has_global_variable"><strong>has_global_variable</strong></a>(pc, expected_variable)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;denoting&nbsp;if&nbsp;a&nbsp;global&nbsp;variable&nbsp;is&nbsp;present&nbsp;in&nbsp;the&nbsp;sketch<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;expected_variable&nbsp;(string):&nbsp;the&nbsp;global&nbsp;variable&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;expected&nbsp;variable&nbsp;is&nbsp;found&nbsp;or&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-method_has_conditional"><strong>method_has_conditional</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;if&nbsp;the&nbsp;method&nbsp;has&nbsp;a&nbsp;conditional<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;method&nbsp;has&nbsp;conditional&nbsp;or&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-method_has_for_loop"><strong>method_has_for_loop</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;if&nbsp;the&nbsp;method&nbsp;has&nbsp;a&nbsp;for&nbsp;loop<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;for&nbsp;loop&nbsp;is&nbsp;found&nbsp;or&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-method_has_name"><strong>method_has_name</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;or&nbsp;None&nbsp;if&nbsp;the&nbsp;expected&nbsp;method&nbsp;is&nbsp;found&nbsp;(or&nbsp;not)&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;method&nbsp;is&nbsp;found&nbsp;or&nbsp;not</tt></dd></dl>
+ <dl><dt><a name="-method_has_while_loop"><strong>method_has_while_loop</strong></a>(pc, method_name)</dt><dd><tt>Returns&nbsp;a&nbsp;boolean&nbsp;if&nbsp;the&nbsp;method&nbsp;has&nbsp;a&nbsp;while&nbsp;loop<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;pc&nbsp;(dictionary):&nbsp;dictionary&nbsp;representing&nbsp;the&nbsp;parsed&nbsp;student&nbsp;code<br>
+&nbsp;&nbsp;method_name&nbsp;(string):&nbsp;the&nbsp;method&nbsp;name&nbsp;expected&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;student&nbsp;code<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;(boolean):&nbsp;while&nbsp;loop&nbsp;is&nbsp;found&nbsp;or&nbsp;not</tt></dd></dl>
+</td></tr></table>
+</body></html>
