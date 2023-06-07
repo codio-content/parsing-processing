@@ -113,3 +113,11 @@ python3 -m pydoc -b
 ```
 
 Note, this command will not work if you are running this command in a Codio box. In Codio, you will see the `qpc.html` file in the `docs` directory. Right-click on the file and select `Preview static` to see the documentation.
+
+If you are on a box running a version of Python newer than 3.7, you can use the following command to run the graphical documentation on port 3000.
+
+```
+python3 -m pydoc -n 0.0.0.0 -p 3000
+```
+
+Open the port in the Codio browser. You will see a link for the `qpc` documentation under the `/home/codio/workspace` section. You can also go to the `Get` field in the top-right corner and enter `qpc`.
